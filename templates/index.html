@@ -1,0 +1,78 @@
+<!-- Vikram Sunil Bajaj (vsb259) -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Engine</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../static/css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../static/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../static/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../static/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../static/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../static/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../static/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../static/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../static/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../static/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../static/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/icons/favicon-16x16.png">
+    <link rel="manifest" href="../static/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../static/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        nav {
+            background: white !important;
+        }
+
+        nav a.brand-logo {
+            color: black;
+        }
+
+        nav li a {
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body bgcolor='#212121'>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../static/js/materialize.min.js"></script>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="http://127.0.0.1:5000/" class="brand-logo center"><img src="../static/images/logo.png" alt="logo" style="height: 50px; width: auto; margin-top: 8px;"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="http://127.0.0.1:5000/">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row" style="position: relative; top: 250px;">
+        <div class="col s12 m6 l6 push-m3 push-l3">
+            <form style="color: black;" action="http://127.0.0.1:5000/results.html" method="POST">
+                <div class="input-field">
+                    <input name="search" id="search" type="search" placeholder="Query ..." style="padding-left: 10px; background: white;" required>
+                    <p><label><input name="choice" type="radio" value="conjunctive" checked /><span style="color: white;">Conjunctive</span></label></p>
+                    <p><label><input name="choice" type="radio" value="disjunctive" /><span style="color: white;">Disjunctive</span></label></p>
+                    <button class="btn waves-effect waves-light hoverable z-depth-2" type="submit" style="background: #212121;"><i class="material-icons" style="color: white; padding: 2px;">search</i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
